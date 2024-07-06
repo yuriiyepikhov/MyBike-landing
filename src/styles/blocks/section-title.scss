@@ -1,0 +1,29 @@
+.section-title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+
+  @include on-tablet {
+    font-size: 48px;
+  }
+
+  @include on-desktop {
+    font-size: 64px;
+  }
+
+  &--move {
+    text-align: left;
+  }
+
+  &--contacts {
+    text-transform: none;
+
+    @include on-desktop {
+      font-size: 48px;
+      font-weight: 600;
+    }
+  }
+}

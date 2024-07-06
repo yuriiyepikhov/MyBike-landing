@@ -1,0 +1,109 @@
+.contacts {
+  &__title {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    @include grid-container;
+  }
+
+  &__form-wrapper {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__info-wrapper {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: 8 / -3;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: $input-bg-color;
+    border-radius: 40px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+
+    appearance: none;
+    outline: none;
+    border: 1px solid transparent;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: $input-dark-color;
+    line-height: 20px;
+
+    @include hover(border-color, $input-border-color);
+
+    &:focus {
+      border-color: $input-dark-color;
+    }
+
+    &:-webkit-autofill {
+      -webkit-text-fill-color: $input-dark-color;
+      -webkit-box-shadow: 0 0 0 50px $input-bg-color inset;
+    }
+
+    &::placeholder {
+      color: $grey-color;
+    }
+
+    &--message {
+      resize: none;
+      height: 148px;
+      border-radius: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-title {
+    margin: 0;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__info-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $white-color;
+    font-weight: 500;
+    margin-bottom: 24px;
+
+    @include main-cursor;
+    @include hover(color, #a0a0a0);
+
+    &--address {
+      margin-bottom: 0;
+    }
+  }
+}

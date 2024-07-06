@@ -1,0 +1,40 @@
+.button {
+  width: 100%;
+  height: 56px;
+  border-radius: 40px;
+  background-color: $white-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  padding: 0;
+
+  text-decoration: none;
+  font: inherit;
+  color: $dark-color;
+  text-align: center;
+  font-weight: 700;
+  line-height: 27px;
+
+  @include main-cursor;
+  @include hover(box-shadow, 1px 4px 16px rgba(232, 232, 240, 0.4));
+
+  &:active {
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
+  }
+
+  &--explore {
+    width: 278px;
+
+    @include on-tablet {
+      width: 392px;
+    }
+
+    @include on-desktop {
+      width: 324px;
+    }
+  }
+}

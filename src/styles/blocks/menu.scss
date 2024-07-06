@@ -1,0 +1,69 @@
+.menu {
+  height: 100vh;
+  background-color: $menu-bg-color;
+  overflow: auto;
+
+  color: $dark-color;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include on-desktop {
+    font-weight: 700;
+  }
+
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__top {
+    position: sticky;
+    top: 0;
+    background-color: $menu-bg-color;
+    z-index: 1;
+
+    margin-bottom: 24px;
+
+    @include on-tablet {
+      margin-bottom: 8px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__phone-number {
+    display: block;
+    width: fit-content;
+    margin-bottom: 16px;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__book-link {
+    display: block;
+    width: fit-content;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $dark-color;
+
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+  }
+
+  &__phone-number,
+  &__book-link,
+  .top-bar__logo-img,
+  .icon {
+    @include menu-cursor;
+  }
+}
