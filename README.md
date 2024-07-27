@@ -8,7 +8,7 @@ The landing page is designed to attract clients' attention, showcase the wide ra
 
 ## Project Overview
 
-The page is designed with HTML and CSS/SCSS, and includes the following elements:
+The page is designed with HTML and SCSS, and includes the following elements:
 
 - **Sidebar Navigation Menu** that expands and collapses for convenient navigation through the page.
 - **Product Cards** with detailed descriptions.
@@ -20,9 +20,9 @@ The page is designed with HTML and CSS/SCSS, and includes the following elements
 ## Technologies Used
 
 1. **HTML**: Used for structuring the content and elements of the landing page.
-2. **CSS/SCSS**: Used for styling the HTML elements to enhance the visual appeal and user experience.
+2. **SCSS**: Used for styling the HTML elements to enhance the visual appeal and user experience.
 
-Together, these technologies provide an engaging and responsive landing page for MyBike, offering a consistent user experience on different screens and devices.
+Together, these technologies provide a responsive landing page that adapts seamlessly to various screen sizes and devices. Whether viewed on a desktop, tablet, or smartphone, the layout and content adjust to provide an optimal user experience.
 
 ## Preview
 
@@ -58,7 +58,7 @@ code MyBike-landing
 npm install
 ```
 
-5. **Start the Project**: Start the project locally:
+5. **Start the Project**: Start the project locally on your device:
 
 ```
 npm start
